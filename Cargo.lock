@@ -1,0 +1,30 @@
+[root]
+name = "typer"
+version = "0.1.0"
+dependencies = [
+ "qml 0.0.6 (git+https://github.com/White-Oak/qml-rust.git)",
+]
+
+[[package]]
+name = "lazy_static"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libc"
+version = "0.2.15"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "qml"
+version = "0.0.6"
+source = "git+https://github.com/White-Oak/qml-rust.git#447ca67ea02ec881b5e137ef341351c74dfdbc8f"
+dependencies = [
+ "lazy_static 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.15 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum lazy_static 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "49247ec2a285bb3dcb23cbd9c35193c025e7251bfce77c1d5da97e6362dffe7f"
+"checksum libc 0.2.15 (registry+https://github.com/rust-lang/crates.io-index)" = "23e3757828fa702a20072c37ff47938e9dd331b92fac6e223d26d4b7a55f7ee2"
+"checksum qml 0.0.6 (git+https://github.com/White-Oak/qml-rust.git)" = "<none>"
